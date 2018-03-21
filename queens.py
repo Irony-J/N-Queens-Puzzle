@@ -1,7 +1,7 @@
 import numpy as np
 
-rows = 8
-cols = 8
+rows = 10
+cols = 10
 
 
 class State():
@@ -63,6 +63,7 @@ while frindge:
             if cur_col == cols - 1:
                 print('A valid result:')
                 print(new_arr)
+                exit()
 
             else:
                 new_state = State(new_arr, state.num + 1)
